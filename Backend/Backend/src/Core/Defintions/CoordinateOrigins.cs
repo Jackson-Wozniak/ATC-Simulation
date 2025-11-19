@@ -1,6 +1,6 @@
 ﻿namespace Backend.Core.Defintions;
 
-public class SimulationOrigin
+public class CoordinateOrigins
 {
     
 }
