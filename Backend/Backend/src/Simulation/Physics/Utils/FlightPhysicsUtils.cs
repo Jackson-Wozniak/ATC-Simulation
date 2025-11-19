@@ -17,11 +17,11 @@ public class FlightPhysicsUtils
         return CoordinatesNauticalMiles.From(
             currentPosition.X + changeX, 
             currentPosition.Y + changeY, 
-            NewAltitudeFt(currentPosition.AltitudeFt, speedKnots, pitch, duration)
+            NewAltitude(currentPosition.AltitudeFt, speedKnots, pitch, duration)
         );
     }
 
-    public static double NewAltitudeFt(double altitudeFt, double speedKnots, double pitch, TimeSpan duration)
+    public static double NewAltitude(double altitudeFt, double speedKnots, double pitch, TimeSpan duration)
     {
         return altitudeFt + (speedKnots.KnotsToFeetPerSec()
                              * Math.Sin(pitch.ToRadians()) * duration.TotalSeconds);

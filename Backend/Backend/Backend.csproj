@@ -16,4 +16,8 @@
       <Folder Include="src\Simulation\Engine\" />
     </ItemGroup>
 
+    <ItemGroup>
+        <Compile Remove="tests\**\*" />
+    </ItemGroup>
+
 </Project>
