@@ -2,5 +2,5 @@
 
 public class PhysicsDefinitions
 {
-    public TimeSpan MaxDurationBeforeTrajectoryUpdate { get; set; }
+    public const int SecondsBeforeTrajectoryUpdate = 1;
 }
