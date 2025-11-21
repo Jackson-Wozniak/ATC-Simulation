@@ -1,6 +1,10 @@
+using Backend.Simulation.Physics.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<FlightTrajectoryService>();
+builder.Services.AddScoped<FlightPhysicsService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
